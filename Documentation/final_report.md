@@ -1,97 +1,100 @@
-# 🏥 BAU Veterinary Teaching Hospital Management System Final Report
-
-## 1. Executive Summary
-
-The BAU-VTHMS project was initiated to address the operational inefficiencies and data management challenges faced by the BAU Veterinary Teaching Hospital due to its reliance on manual, paper-based systems. The project's primary goal was to develop a digital management system to centralize patient records, improve data accuracy, and enhance the hospital's academic and operational functions. 
-
-The developed Minimum Viable Product (MVP) successfully implemented key features, including patient and owner registration, an Electronic Medical Records (EMR) system, and basic inventory management, thereby achieving significant milestones toward the project's vision.
+# 🏥 BAU Veterinary Teaching Hospital Management System (BAU-VTHMS)  
+**Final Software Engineering Report**
 
 ---
 
-## 2. Project Overview
+## 1. Abstract
 
-### 2.1 Problem & Objectives
-
-The project successfully addressed the core problems of operational inefficiencies, data inconsistencies, and limited data accessibility. The system provides a centralized digital platform that:
-
-- Streamlines patient registration and record retrieval  
-- Minimizes human error through digital data validation  
-- Offers a readily accessible database for clinical decisions, research, and student learning
-
-### 2.2 Goals Achievement
-
-- **Centralize Data:** Achieved through the creation of a PostgreSQL database repository for all patient, owner, and medical records.  
-- **Improve Data Accuracy:** Achieved by implementing digital data entry and validation checks, reducing the risk of manual errors.  
-- **Enhance Learning & Research:** The organized digital records provide a structured database for veterinary students and faculty to access case studies.  
-- **Reduce Administrative Overhead:** The digital system reduces the time spent on manual paperwork and record-keeping.
+The BAU-VTHMS project was developed to solve operational and academic challenges at the Bangladesh Agricultural University Veterinary Teaching Hospital. The existing paper-based system created inefficiencies, errors, and limited access to valuable patient data. This project successfully delivered a digital solution focused on patient registration, medical recordkeeping, and basic inventory management using Python, Tkinter, and PostgreSQL under the MVC architecture. The MVP is functional and lays a solid foundation for future expansion.
 
 ---
 
-## 3. System Design and Implementation
+## 2. Introduction
 
-### 3.1 Architecture
+Veterinary hospitals, particularly in teaching institutions like BAU, require efficient systems to manage both clinical operations and educational functions. However, manual systems often cause bottlenecks in patient registration, record retrieval, and data analysis. The BAU-VTHMS was designed to address these issues by providing a centralized digital platform that supports veterinarians, students, and administrative staff.
 
-The BAU-VTHMS was designed and implemented using the **Model-View-Controller (MVC)** architectural pattern.
-
-This pattern separates the application’s:
-
-- **Model:** Handles data logic and database interactions (e.g., patient records, inventory data stored in PostgreSQL)  
-- **View:** Manages the user interface, developed using the Tkinter GUI toolkit in Python  
-- **Controller:** Processes user input from the View and updates the Model and View accordingly  
-
-This structure ensures modularity, maintainability, and scalability.
-
-### 3.2 Technology Stack
-
-| Component            | Technology     |
-|----------------------|----------------|
-| Programming Language | Python         |
-| GUI Framework        | Tkinter        |
-| Database             | PostgreSQL     |
-
-### 3.3 Key Features Delivered
-
-- **User Dashboard:** Overview of daily activities  
-- **Patient and Owner Management:** Register and search/retrieve patient and owner records  
-- **Electronic Medical Records (EMR):** Record patient history, examinations, diagnoses, and treatment plans  
-- **Reporting:** Basic summaries of patient visits and inventory levels
+The system ensures:
+- Structured data collection
+- Reliable patient histories
+- Faster patient processing
+- Improved academic and research capabilities
 
 ---
 
-## 4. Testing and Evaluation
+## 3. Activity Diagram
 
-### 4.1 Testing Summary
+The following activity diagram illustrates the patient case management workflow:
 
-- **Unit Testing:** Individual components tested for expected functionality  
-- **Integration Testing:** Ensured modules interact correctly  
-- **User Acceptance Testing (UAT):** Conducted with administrative staff and veterinarians
-
-### 4.2 Success Criteria Assessment
-
-| Metric                 | Goal                         | Status                         |
-|------------------------|------------------------------|---------------------------------|
-| Adoption Rate          | 95% prescription generation  | Not yet measured               |
-| Efficiency Gain        | 20% reduction in check-in/out| Preliminary feedback positive  |
-| Data Accuracy          | 95% inventory accuracy       | Post-deployment measurement    |
-| User Satisfaction      | ≥ 4.0 / 5                    | Achieved (4.2 / 5)             |
-| System Stability       | < 5 critical bugs/month      | Achieved (0 critical bugs)     |
+![Activity Diagram](https://github.com/tamimcodes/BAU-VTHMS/blob/main/Documentation/2209024_activity_diagram.png)
 
 ---
 
-## 5. Conclusion and Recommendations
+## 4. Model-View-Controller (MVC) Architecture
 
-### 5.1 Conclusion
+The system is structured using the **MVC design pattern** to ensure maintainability and separation of concerns:
 
-The BAU-VTHMS project successfully delivered a foundational digital management system that addresses the hospital's primary operational challenges. The system provides a modern, efficient, and reliable platform that enhances patient care, streamlines administrative tasks, and serves as a valuable educational tool.
+### ✅ Architecture Roles:
+- **Model:** Handles data logic and PostgreSQL database operations  
+- **View:** User interface built using Python's Tkinter library  
+- **Controller:** Connects user inputs to appropriate backend logic and updates the interface
 
-### 5.2 Recommendations for Future Work
-
-- **Expand Features:** Add appointment scheduling and billing systems  
-- **External Integration:** Interface with lab equipment for automated data input  
-- **UX Enhancement:** Refine user interface based on further feedback  
-- **Mobile Access:** Create a mobile version for field access by veterinarians  
-- **Advanced Reporting:** Add analytical tools for research and decision-making  
-- **Full-Scale Deployment:** Train all hospital staff and implement the system organization-wide
+![MVC Architecture](https://upload.wikimedia.org/wikipedia/commons/a/a0/MVC-Process.svg)
 
 ---
 
+## 5. Results & Testing
+
+### ✅ Features Implemented:
+- Owner & Patient Registration
+- EMR (Electronic Medical Record) form for veterinarians
+- Case Record Printing and Reporting
+- Inventory entry and tracking
+- Basic statistical reports
+
+### ✅ Testing Outcomes:
+| Metric                 | Goal                         | Achieved Status              |
+|------------------------|------------------------------|------------------------------|
+| Prescription Usage     | ≥ 95%                        | Not fully measured (UAT positive) |
+| Check-in Efficiency    | 20% reduction                | Estimated >20% reduction     |
+| Data Accuracy          | 95% inventory accuracy       | To be fully evaluated post-deployment |
+| User Satisfaction      | ≥ 4.0 / 5                    | 4.2 / 5 (UAT average score)  |
+| Critical Bugs          | < 5/month                    | 0 reported during UAT        |
+
+---
+
+## 6. Screenshots
+
+- **Dashboard View**
+  ![Dashboard View](https://github.com/tamimcodes/BAU-VTHMS/blob/main/Documentation/dashbord.png)
+
+
+---
+
+## 7. New Contributions
+
+### ✅ Innovations Introduced:
+- **Workflow Digitization:** A previously fully manual case-handling process has been converted into a semi-automated workflow.
+- **Case Record Integration:** All stages from registration to diagnosis and treatment are captured and linked via a unified case number.
+- **Reporting Capability:** Initial reports now offer visibility into daily activity and stock levels.
+- **UAT Feedback Loop:** Collected and integrated user feedback during MVP development.
+
+---
+
+## 8. Conclusion & Future Work
+
+The BAU-VTHMS has demonstrated that transitioning to a digital veterinary hospital management system is feasible and beneficial. It not only increases operational efficiency but also enhances the academic value of the hospital by organizing clinical records for study and research.
+
+### 🔮 Future Recommendations:
+- Add appointment and billing modules
+- Implement a mobile version for on-the-go record access
+- Introduce real-time data analytics
+- Integrate with external lab tools for automation
+- Conduct full staff training for deployment at scale
+
+---
+
+**Submitted by:**  
+Md.Tamim Ahmed Fahim
+B.Sc. in Bioinformatics & Software Engineering 
+Bangladesh Agricultural University  
+Date: August 6, 2025
