@@ -65,7 +65,7 @@ The system is structured using the **MVC design pattern** to ensure maintainabil
 ## 6. Screenshots
 
 - **Dashboard View**
-  ![Dashboard View](https://github.com/tamimcodes/BAU-VTHMS/blob/main/Documentation/dashbord.png)
+  ![Dashboard View](https://github.com/t-fahim/BAU-VTHMS/blob/main/Documentation/dashbord.png)
 
 
 ---
